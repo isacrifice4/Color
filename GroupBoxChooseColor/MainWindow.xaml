@@ -1,0 +1,26 @@
+﻿<Window x:Class="GroupBoxChooseColor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GroupBoxChooseColor"
+        mc:Ignorable="d"
+        Title="Цвета" Height="205.375" Width="376.136">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="Выбрать цвет" Padding="5" Margin="0,10,0,42">
+            <StackPanel>
+                <RadioButton Content="Синий" Name="rBBlue" Margin="3" Checked="RBBlue_Checked"/>
+                <RadioButton Content="Жёлтый" Name="rbYellow" Margin="3" Checked="RbYellow_Checked"/>
+                <RadioButton Content="Оранжевый" Name="rBOrange" Margin="3" Checked="RBOrange_Checked" Height="19" RenderTransformOrigin="0.5,0.5"/>
+            </StackPanel>
+        </GroupBox>
+        <Rectangle Name="rColor" Grid.Column="1"  HorizontalAlignment="Left"  Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Height="144" Width="170"/>
+
+    </Grid>
+</Window>
